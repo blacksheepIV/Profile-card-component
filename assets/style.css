@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --circular: 100%;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+}
+
+.container{
+    background-color: hsl(185, 75%, 39%);
+    background-image: url('./images/bg-pattern-top.svg') , url('./images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat,no-repeat ;
+    background-position: right 45vw bottom 10vh, left 45vw top 55vh ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    border-radius: 14px;
+    background-color: white;
+    width: 352px;
+    height: auto;
+    position: relative;
+    top: 160px;
+    /* left: 45px; */
+    dispaly:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__header{
+    border-radius: 14px 14px 0 0;
+    background-image: url('./images/bg-pattern-card.svg');
+    height: 140px;
+}
+
+.card__avatar{
+    background-image: url('./images/image-victor.jpg');
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    border-radius: var(--circular);
+    position: relative;
+    top: -50px;
+    margin: 0 auto;
+}
+
+.card__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__name{
+    margin-right: 10px;
+}
+.card__statistics{
+    border-top: 1px solid hsl(0, 0%, 59%);
+    padding: 29px 0 27px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card__statType{
+    font-size: 11px;
+    margin-top:7px;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.light{
+    font-weight: 300;
+    color: hsl(227, 10%, 46%)
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
